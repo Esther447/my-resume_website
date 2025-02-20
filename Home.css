@@ -473,6 +473,7 @@ h2 {
 
 .back-to-home:hover {
   background-color: #0056b3;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
