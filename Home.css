@@ -478,6 +478,7 @@ h2 {
 
 #back-to-home{
   text-decoration: none;
+  decoration: none;
 }
 
 @media (max-width: 768px) {
