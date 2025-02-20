@@ -469,11 +469,11 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .back-to-home:hover {
   background-color: #0056b3;
-  text-decoration: none;
 }
 
 @media (max-width: 768px) {
