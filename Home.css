@@ -1,0 +1,554 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(237, 231, 231);
+  color: hsl(0, 0%, 3%);
+}
+
+/* Header and Navigation */
+header {
+  background-color: #333;
+  color: rgb(40, 38, 38);
+  padding: 10px 0;
+  text-align: center;
+}
+header div {
+  font-size: 1.2em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+}
+
+.one-one {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.link li {
+  display: inline;
+}
+
+.link-one {
+  color: rgb(165, 165, 165);
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.link-one:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .link {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #444;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  .link li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+
+
+#upcoming {
+  border-radius: 15px;
+  background-color: gainsboro;
+  display: flex;
+}
+
+#experience {
+  border-radius: 15px;
+  gap: 20px; 
+}
+
+#about img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills li {
+  background: #ddd;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Contact Form */
+#contact-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+#contact-form input, #contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+#home {
+  text-align: center;
+  padding: 2em;
+  background-size: cover;
+}
+
+#home h1 {
+  font-size: 2.5em;
+}
+
+#home img {
+  width: 100px;
+  margin-top: 20px;
+}
+#about {
+  display: flex;
+  flex-direction: row; /* Side-by-side layout */
+  align-items: center;
+  gap: 20px; /* Space between image and text */
+}
+
+#about h1 {
+  font-size: 2em;
+}
+#about img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+#about-text {
+  flex: 1; /* Takes remaining space */
+}
+#about .pict {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Skills Section */
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+#skills li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Education & Experience Section */
+section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+section p {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+/* Project Section */
+#project-p .project {
+  background-color: #fff;
+  padding: 1.5em;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#project-p .project h3 {
+  font-size: 1.8em;
+}
+
+#project-p .project p {
+  font-size: 1em;
+}
+
+#project-p a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header div {
+    font-size: 1.1em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  #home h1 {
+    font-size: 2em;
+  }
+
+  #about h1 {
+    font-size: 1.8em;
+  }
+
+  #about .pict {
+    width: 150px;
+  }
+
+  #skills ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  #skills li {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  header div {
+    font-size: 1em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 5px;
+  }
+
+  #home h1 {
+    font-size: 1.5em;
+  }
+
+  #about h1 {
+    font-size: 1.5em;
+  }
+
+  #about .pict {
+    width: 130px;
+  }
+
+  #skills ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  #skills li {
+    font-size: 1em;
+  }
+
+  .project {
+    font-size: 0.9em;
+  }
+}
+.next-to {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* Tablets & small screens */
+  .next-to {
+      flex-direction: column; /* Stack items vertically */
+      gap: 10px; /* Reduce gap for smaller screens */
+  }
+}
+
+@media (max-width: 480px) { /* Phones */
+  .next-to {
+      flex-direction: column;
+      align-items: flex-start; /* Align items to the left */
+      gap: 5px; /* Even smaller gap for compact view */
+  }
+}
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+/* Container for experience and upcoming sections */
+section {
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 20px; /* Adds space between the sections */
+  justify-content: space-between;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 40px 20px;
+  background-image: url(https://www.technocrazed.com/wp-content/uploads/2015/12/HD-purple-wallpaper-image-to-use-as-background-134.jpg);
+}
+
+/* Styling each project container */
+.project {
+  border-width: 15px;
+  color: white;
+  flex: 1; /* Distributes space evenly */
+  min-width: 300px; /* Ensures a minimum width for each project */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(148, 54, 230, 0.1);
+  background-image: url(https://wallpaperboat.com/wp-content/uploads/2019/10/cool-website-background-15.jpg)
+}
+
+.project p {
+  color: rgba(176, 175, 175, 0.897);
+}
+
+.project h3 {
+  color: #645a5a;
+}
+
+/* Adjusting title styles */
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Styling paragraphs inside the project */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Styling the section title */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #1d1c1c;
+}
+#dropdown-menu {
+  position: absolute;
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#dropdown-menu ul li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#dropdown-menu ul li a {
+  text-decoration: none;
+  color: rgb(224, 187, 187);
+  display: block;
+}
+#dropdown-menu.show {
+  display: block;
+}
+.back-to-home {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-to-home:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .slides img {
+    max-width: 45%; /* Reduces the width of images on smaller screens */
+  }
+}
+
+.slides-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Hide images outside the container */
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth scrolling effect */
+}
+
+.slides img {
+  width: 50%;
+  max-width: 160px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  padding-top: 3px;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  gap: 70px;
+  margin: 50ppx;
+  margin-left: 1px;
+  margin-right: 2pxpx;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.plogect {
+  color: #093769;
+  background-color: #f99b9b;
+}
