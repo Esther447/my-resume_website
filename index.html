@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Resume Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="Home.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to my Resume Website!</h1>
-    <p>This is a test page.</p>
+  <header>
+    <div>
+      <p>Esther MUSHIMIYIMANA</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a class="link-one" href="#about">About</a></li>
+        <li><a class="link-one" href="#skills">Skills</a></li>
+        <li><a class="link-one" href="#experience">Experience</a></li>
+        <li><a class="link-one" href="#education">Education</a></li>
+        <li><a class="link-one" href="#project-p">Projects</a></li>
+        <li><a class="link-one" href="#contact">Contact</a></li>
+      </ul>
+      <button id="menu-toggle">☰</button>
+    </nav>
+  </header>
+  <section id="home">
+    <h1>Welcome to My Resume</h1>
+    <img src="star.png" alt="">
+    <p>Currently I'm Student at African Leadership University I'm taking BSE: Bachelor of Software Engineering I joined in 2024 and I expecting to graduate in 2027. So welcome to my showcase</p>
+</section>
+  <section id="about">
+    <h2>About Me</h2>
+    <h1>Hello, I'm Esther MUSHIMIYIMANA</h1>
+    <p>Web Devoloper | IoT Enthusiast | Problem Solver</p>
+    <img class="pict" src="pic2.jpg" alt="image">
+  </section>
+  <section id="about">
+    <div class="slides-container">
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <div class="slides">
+        <img src="author.jpg" alt="Project 1">
+        <img src="author2.jpg" alt="Project 2">
+        <img src="author3.jpg" alt="Project 3">
+      </div>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div> 
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Git & GIthub</li>
+      <li>Project Management</li>
+      <li>Shell Scripting</li>
+    </ul>
+    <button class="back-to-home">Back to Home</button>
+  </section>
+ 
+  <section id="education">
+    <h2>Education</h2>
+    <p>Primary (2011 - 2016): G.S ste Jean Bosco</p>
+    <p>Secondary O-Level (2017 - 2019): G.S Rosa Mystica</p>
+    <p>Secondary A-Level (2020 - 2023): Ecole Sainte Bernadette</p>
+    <p>University (2024 - Present): African Leadership University</p>
+    <button class="back-to-home">Back to Home</button>
+</section>  
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>Instructor & Mentor - Beaded Art Training</p>
+    <p>Software Developer - Personal & Academic Projects</p>
+    <button class="back-to-home">Back to Home</button>
+</section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+       <input type="text" id="name" placeholder="Your Name"> <br>
+       <input type="email" id="email" placeholder="Your Email"> <br>
+       <input type="tel" id="phone" placeholder="Your Phone Number" pattern="(079|078)\d{7}" title="Phone number must be 10 digits and start with 079 or 078" required> <br>
+       <textarea id="message" placeholder="Your Message"></textarea> <br>
+       <button type="submit">Send</button>
+    </form>
+    <button class="back-to-home">Back to Home</button>
+</section>
+  <section id="project-p">
+    <h2>Projects</h2>
+    <p>My E-WheelAssistCare project is an electronic wheelchair initiative that integrates IoT (Internet of Things) to enhance accessibility and assistance for individuals with mobility challenges.</p>
+      <a class="plogect" href="Project.html">Overview</a>
+   <div class="next-to">
+    <div class="project">
+      <h3>Shell Scripting & Python Development</h3>
+      <p><strong>April 2024 – Present</strong></p>
+      <p>Developed automation scripts for process management, file handling, and arithmetic operations using Bash and Python. Contributed to GitHub repositories showcasing structured and efficient coding.</p>
+  </div>
+
+  <div class="project">
+      <h3>Beadwork Training for People with Disabilities</h3>
+      <p><strong>2023 – Present</strong></p>
+      <p>Taught young individuals with disabilities how to create and sell beaded art products, empowering them with business and financial skills.</p>
+  </div>
+  <button class="back-to-home">Back to Home</button>
+  </section>
+  
+  <section id="upcoming">
+    <h2>Upcoming Projects</h2>
+  
+    <div class="project">
+        <h3>E-WheelAssistCare – IoT-Powered Smart Wheelchair</h3>
+        <p><strong>Planned Start: 2025</strong></p>
+        <p>Designing an electronic wheelchair with IoT capabilities for accessibility improvement. Integrating smart controls for ease of movement and remote assistance.</p>
+    </div>
+    <button class="back-to-home">Back to Home</button>
+  </section>
+</div>
+<footer>
+  <p>&copy; 2025 My Resume. Keywords: HTML, CSS, JavaScript, IoT, Shell Scripting, Python, Accessibility.</p>
+</footer>
+
 </body>
-</html>
+</html> 
